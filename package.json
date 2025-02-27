@@ -1,0 +1,14 @@
+{
+  "name": "meet-landing-page",
+  "version": "1.0.0",
+  "description": "![Design preview for the Meet landing page coding challenge](./preview.jpg)",
+  "main": "index.html",
+  "scripts": {
+    "sass": "sass --watch --update --no-source-map --style=expanded assets/scss:assets/css"
+  },
+  "author": "KonradJam",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.85.1"
+  }
+}
