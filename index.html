@@ -3,32 +3,59 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
   <title>Frontend Mentor | Meet landing page</title>
 </head>
 <body>
-  <main class="meet">
-    <header class="meet__header">
-      <h1 class="header__title">Group Chat for Everyone</h1>
-      <p class="header__description">Meet makes it easy to connect with others face-to-face virtually and collaborate across any device.</p>
-      Download v1.3
-      What is it?
+  <main>
+    <header class="header">
+      <img srcset="./assets/images/icons/logo.svg" alt="Meet logo" class="header__logo" width="118" height="28">
+      <picture class="header__hero-mobile">
+        <source media="(max-width: 767px)" srcset="./assets/images/image-hero.webp" type="image/webp">
+        <source media="(max-width: 767px)" srcset="./assets/images/image-hero.png" type="image/png">
+        <img src="./assets/images/image-hero.png" 
+         srcset="./assets/images/image-hero.png 830w" 
+         sizes="(max-width: 767px) 110vw, 0px" 
+         alt="Hero Image">
+      </picture>
+      <div class="header__container">
+        <h1 class="header__title">Group Chat for Everyone</h1>
+        <p class="header__description">Meet makes it easy to connect with others face-to-face virtually and collaborate across any device.</p>
+        <div class="buttons">
+          <button class="buttons__button buttons__button--primary">Download v1.3</button>
+          <button class="buttons__button buttons__button--secondary">What is it?</button>
+        </div>
+      </div>
     </header>
-    <section class="meet__section">
-      01
-      Built for modern use
-      Smarter meetings, all in one place
-      Send messages, share files, show your screen, and record your meetings — all in one
-      workspace. Control who can join with invite-only team access, data encryption, and data export.
+    <section class="section">
+      <div class="section__number-component">
+        <div class="section__vertical-line"></div>
+        <div class="section__number">01</div>
+      </div>
+      <div class="section__container">
+        <p class="section__subtitle">Built for modern use</p>
+        <h2 class="section__title">Smarter meetings, all in one place</h2>
+        <p class="section__description">
+          Send messages, share files, show your screen, and record your meetings — all in one
+          workspace. Control who can join with invite-only team access, data encryption, and data export.
+      </div>
+      </p>
     </section>
-    <footer class="meet__footer">
-      02
-      Experience more together
-      Stay connected with reliable HD meetings and unlimited one-on-one and group video sessions.
-      Download v1.3
-    </footer>
+    <footer class="section">
+      <div class="section__number-component">
+        <div class="section__vertical-line"></div>
+        <div class="section__number">02</div>
+      </div>
+      <div class="section__container">
+        <h2 class="section__title">Experience more together</h2>
+        <p class="section__description">Stay connected with reliable HD meetings and unlimited one-on-one and group video sessions.</p>
+        <button class="button">Download v1.3</button>
+            </footer>
+      </div>
   </main>
 </body>
 </html>

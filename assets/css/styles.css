@@ -1,0 +1,131 @@
+/* RESET - Start */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+/*RESET - stop*/
+.header {
+  margin-block-end: 64px;
+}
+.header__logo {
+  margin: 48px auto;
+}
+.header__hero-mobile > * {
+  position: relative;
+  inline-size: 110vw;
+  block-size: 100%;
+  margin-inline: -5vw;
+  margin-block-end: 48px;
+}
+.header__container {
+  padding-inline: clamp(2rem, -5.634rem + 32.57vw, 10rem); /* min: 32px, max: 160px */
+}
+.header__title {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 2.5rem;
+  line-height: 110%;
+  letter-spacing: 0;
+  font-weight: 900;
+  color: rgb(40, 40, 61);
+}
+@media (min-width: 48rem) {
+  .header__title {
+    font-size: 3rem;
+  }
+}
+@media (min-width: 64rem) {
+  .header__title {
+    font-size: 4rem;
+  }
+}
+.header__description {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 1rem;
+  line-height: 150%;
+  letter-spacing: 0;
+  font-weight: 500;
+  color: rgb(135, 135, 157);
+  margin-block: 24px;
+}
+@media (min-width: 64rem) {
+  .header__description {
+    font-size: 1.125rem;
+  }
+}
+
+.section__number-component {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.section__vertical-line {
+  inline-size: 1px;
+  block-size: 5rem;
+  background-color: rgb(209, 209, 223);
+}
+.section__number {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 1rem;
+  line-height: 150%;
+  letter-spacing: 0;
+  font-weight: 900;
+  color: rgb(135, 135, 157);
+  padding: 1rem 1.1875rem;
+  border: 1px solid rgb(209, 209, 223);
+  border-radius: 50%;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+.buttons__button {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 1rem;
+  line-height: 150%;
+  letter-spacing: 0;
+  font-weight: 900;
+  color: rgb(250, 250, 250);
+  padding-inline: 40px;
+  padding-block: 16px;
+  border: none;
+  border-radius: 29px;
+}
+.buttons__button--primary {
+  background-color: rgb(77, 150, 168);
+}
+.buttons__button--secondary {
+  background-color: rgb(133, 95, 177);
+}

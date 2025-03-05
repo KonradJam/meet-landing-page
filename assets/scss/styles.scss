@@ -1,0 +1,82 @@
+@import 'assets/reset';
+@import 'assets/variables';
+@import 'assets/mixins';
+
+.header {
+    margin-block-end: $spacing-800;
+
+    &__logo {
+        margin: $spacing-600 auto;
+    }
+
+    &__hero-mobile > * {
+        position: relative;
+        inline-size: 110vw;
+        block-size: 100%;
+        margin-inline: -5vw;
+        margin-block-end: $spacing-600;
+    }
+
+    &__container {
+        padding-inline: clamp(2rem, calc(-5.634rem + 32.57vw), 10rem); /* min: 32px, max: 160px */
+    }
+
+    &__title {
+        @include text-preset-1;
+        color: $slate-900;
+    }
+
+    &__description {
+        @include text-preset-4;
+        color: $slate-600;
+        margin-block: $spacing-300;
+    }
+}
+
+.section {
+    &__number-component {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    &__vertical-line {
+        inline-size: 1px;
+        block-size: 5rem;
+        background-color: $slate-300;
+    }
+
+    &__number {
+        @include text-preset-5;
+        color: $slate-600;
+        padding: 1rem 1.1875rem;
+        border: 1px solid $slate-300;
+        border-radius: 50%;
+    }
+}
+
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: $spacing-200;
+
+    &__button {
+        @include text-preset-5;
+        color: $white;
+        padding-inline: $spacing-500;
+        padding-block: $spacing-200;
+        border: none;
+        border-radius: 29px;
+    }
+
+     &__button--primary {
+        background-color: $cyan-600;
+     }
+
+    &__button--secondary {
+        background-color: $purple-600;
+    }
+
+}
