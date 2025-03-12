@@ -4,6 +4,7 @@
   line-height: 110%;
   letter-spacing: 0;
   font-weight: 900; // Black
+  text-align: center;
   @media (min-width: 48rem) {
     font-size: 3rem; // 48px
   }
@@ -18,6 +19,7 @@
   line-height: 110%;
   letter-spacing: 0;
   font-weight: 900; // Black
+  text-align: center;
   @media (min-width: 48rem) {
     font-size: 2.25rem  // 36px
   }
@@ -32,6 +34,8 @@
   line-height: 110%;
   letter-spacing: 0.25rem; // 4px
   font-weight: 900; // Black
+  text-align: center;
+  text-transform: uppercase;
   @media (min-width: 48rem) {
     font-size: .875rem; // 14px
   }
@@ -46,6 +50,7 @@
   line-height: 150%;
   letter-spacing: 0;
   font-weight: 500; // Medium
+  text-align: center;
   @media (min-width: 64rem) {
     font-size: 1.125rem; // 18px
   }
@@ -57,4 +62,5 @@
   line-height: 150%;
   letter-spacing: 0;
   font-weight: 900; // Black
+  text-align: center;
 }

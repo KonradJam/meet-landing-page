@@ -16,19 +16,34 @@
       <img srcset="./assets/images/icons/logo.svg" alt="Meet logo" class="header__logo" width="118" height="28">
       <picture class="header__hero-mobile">
         <source media="(max-width: 767px)" srcset="./assets/images/image-hero.webp" type="image/webp">
-        <source media="(max-width: 767px)" srcset="./assets/images/image-hero.png" type="image/png">
         <img src="./assets/images/image-hero.png" 
          srcset="./assets/images/image-hero.png 830w" 
          sizes="(max-width: 767px) 110vw, 0px" 
          alt="Hero Image">
       </picture>
-      <div class="header__container">
-        <h1 class="header__title">Group Chat for Everyone</h1>
-        <p class="header__description">Meet makes it easy to connect with others face-to-face virtually and collaborate across any device.</p>
-        <div class="buttons">
-          <button class="buttons__button buttons__button--primary">Download v1.3</button>
-          <button class="buttons__button buttons__button--secondary">What is it?</button>
+      <div class="header__hero-tablet-desktop">
+        <picture class="header__picture-left">
+          <source media="(min-width: 768px)" srcset="./assets/images/image-hero-left.webp" type="image/webp">
+          <img src="./assets/images/image-hero-left.png" 
+          srcset="./assets/images/image-hero-left.png 394w" 
+          sizes="(min-width: 768px) 50vw, 0px"
+          alt="Hero Image Left">
+        </picture>
+        <div class="header__container">
+          <h1 class="header__title">Group Chat for Everyone</h1>
+          <p class="header__description">Meet makes it easy to connect with others face-to-face virtually and collaborate across any device.</p>
+          <div class="buttons">
+            <button class="buttons__button buttons__button--primary">Download <span>v1.3</span></button>
+            <button class="buttons__button buttons__button--secondary">What is it?</button>
+          </div>
         </div>
+        <picture class="header__picture-right">
+          <source media="(min-width: 768px)" srcset="./assets/images/image-hero-right.webp" type="image/webp">
+          <img src="./assets/images/image-hero-right.png" 
+          srcset="./assets/images/image-hero-right.png 394w" 
+          sizes="(min-width: 768px) 50vw, 0px"
+          alt="Hero Image Right">
+        </picture>
       </div>
     </header>
     <section class="section">
@@ -36,6 +51,12 @@
         <div class="section__vertical-line"></div>
         <div class="section__number">01</div>
       </div>
+        <div class="section__images">
+          <img class="section__image" src="assets/images/image-woman-in-videocall.jpg" alt="" width="256" height="256">
+          <img class="section__image" src="assets/images/image-women-videochatting.jpg" alt="" width="256" height="256">
+          <img class="section__image" src="assets/images/image-men-in-meeting.jpg" alt="" width="256" height="256">
+          <img class="section__image" src="assets/images/image-man-texting.jpg" alt="" width="256" height="256">
+        </div>
       <div class="section__container">
         <p class="section__subtitle">Built for modern use</p>
         <h2 class="section__title">Smarter meetings, all in one place</h2>
@@ -50,12 +71,16 @@
         <div class="section__vertical-line"></div>
         <div class="section__number">02</div>
       </div>
-      <div class="section__container">
-        <h2 class="section__title">Experience more together</h2>
-        <p class="section__description">Stay connected with reliable HD meetings and unlimited one-on-one and group video sessions.</p>
-        <button class="button">Download v1.3</button>
-            </footer>
+      <div class="section__background-image">
+        <div class="section__container">
+          <h2 class="section__title">Experience more together</h2>
+          <p class="section__description">Stay connected with reliable HD meetings and unlimited one-on-one and group video sessions.</p>
+          <div class="buttons">
+            <button class="buttons__button buttons__button--secondary">Download <span>v1.3</span></button>
+          </div>
       </div>
+      </div>
+    </footer>
   </main>
 </body>
 </html>
