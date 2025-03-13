@@ -16,11 +16,11 @@ This is a solution to the [Meet landing page challenge on Frontend Mentor](https
 
 ### Screenshot
 
-![](./preview.png)
+![](./preview.jpeg)
 
 ### Links
 
-Live Site URL: [GitHub Pages]()
+Live Site URL: [GitHub Pages](https://konradjam.github.io/meet-landing-page/)
 
 ## My process
 
