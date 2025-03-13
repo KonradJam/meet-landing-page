@@ -12,14 +12,14 @@
 </head>
 <body>
   <main>
-    <header class="header">
+    <header class="header" aria-labelledby="group-chat">
       <img srcset="./assets/images/icons/logo.svg" alt="Meet logo" class="header__logo" width="118" height="28">
       <picture class="header__hero-mobile">
         <source media="(max-width: 767px)" srcset="./assets/images/image-hero.webp" type="image/webp">
         <img src="./assets/images/image-hero.png" 
          srcset="./assets/images/image-hero.png 830w" 
          sizes="(max-width: 767px) 110vw, 0px" 
-         alt="Hero Image">
+         alt="">
       </picture>
       <div class="header__hero-tablet-desktop">
         <picture class="header__picture-left">
@@ -27,10 +27,10 @@
           <img src="./assets/images/image-hero-left.png" 
           srcset="./assets/images/image-hero-left.png 394w" 
           sizes="(min-width: 768px) 50vw, 0px"
-          alt="Hero Image Left">
+          alt="">
         </picture>
         <div class="header__container">
-          <h1 class="header__title">Group Chat for Everyone</h1>
+          <h1 class="header__title" id="group-chat">Group Chat for Everyone</h1>
           <p class="header__description">Meet makes it easy to connect with others face-to-face virtually and collaborate across any device.</p>
           <div class="buttons">
             <button class="buttons__button buttons__button--primary">Download <span>v1.3</span></button>
@@ -42,11 +42,11 @@
           <img src="./assets/images/image-hero-right.png" 
           srcset="./assets/images/image-hero-right.png 394w" 
           sizes="(min-width: 768px) 50vw, 0px"
-          alt="Hero Image Right">
+          alt="">
         </picture>
       </div>
     </header>
-    <section class="section">
+    <section class="section" aria-labelledby="smarter-meetings">
       <div class="section__number-component">
         <div class="section__vertical-line"></div>
         <div class="section__number">01</div>
@@ -59,21 +59,21 @@
         </div>
       <div class="section__container">
         <p class="section__subtitle">Built for modern use</p>
-        <h2 class="section__title">Smarter meetings, all in one place</h2>
+        <h2 class="section__title" id="smarter-meetings">Smarter meetings, all in one place</h2>
         <p class="section__description">
           Send messages, share files, show your screen, and record your meetings — all in one
           workspace. Control who can join with invite-only team access, data encryption, and data export.
       </div>
       </p>
     </section>
-    <footer class="section">
+    <footer class="section" aria-labelledby="experience">
       <div class="section__number-component">
         <div class="section__vertical-line"></div>
         <div class="section__number">02</div>
       </div>
       <div class="section__background-image">
         <div class="section__container">
-          <h2 class="section__title">Experience more together</h2>
+          <h2 class="section__title" id="experience">Experience more together</h2>
           <p class="section__description">Stay connected with reliable HD meetings and unlimited one-on-one and group video sessions.</p>
           <div class="buttons">
             <button class="buttons__button buttons__button--secondary">Download <span>v1.3</span></button>

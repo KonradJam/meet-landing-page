@@ -1,6 +1,6 @@
 @import 'assets/reset';
 @import 'assets/variables';
-@import 'assets/mixins';
+@import 'assets/fluid-typography';
 
 main {
     display: flex;
@@ -26,16 +26,16 @@ main {
     }
 
     &__container {
-        padding-inline: clamp(2rem, calc(-3.01rem + 21.374vw), 7.25rem); /* min: 32px, max: 116px */
+        padding-inline: clamp-size($spacing-400, $spacing-1400, $viewport-mobile, $viewport-tablet);
     }
 
     &__title {
-        @include text-preset-1;
+        @include fluid-typography($text-preset-1);
         color: $slate-900;
     }
 
     &__description {
-        @include text-preset-4;
+        @include fluid-typography($text-preset-4);
         color: $slate-600;
         margin-block: $spacing-300;
     }
@@ -56,7 +56,7 @@ main {
     }
 
     &__number {
-        @include text-preset-5;
+        @include fluid-typography($text-preset-5);
         color: $slate-600;
         padding: 1rem 1.1875rem;
         border: 1px solid $slate-300;
@@ -65,8 +65,8 @@ main {
     }
 
     &__container {
+        padding-inline: clamp-size($spacing-400, $spacing-1400, $viewport-mobile, $viewport-tablet);
         max-inline-size: 34.0625rem;
-        padding-inline: clamp(2rem, calc(-3.01rem + 21.374vw), 7.25rem); /* min: 32px, max: 116px */
     }
 
     &__images {
@@ -86,19 +86,19 @@ main {
     }
 
     &__subtitle {
-        @include text-preset-3;
+        @include fluid-typography($text-preset-3);
         color: $cyan-600;
         margin-block-end: $spacing-200;
     }
 
     &__title {
-        @include text-preset-2;
+        @include fluid-typography($text-preset-2);
         color: $slate-900;
         margin-block-end: $spacing-400;
     }
 
     &__description {
-        @include text-preset-4;
+        @include fluid-typography($text-preset-4);
         color: $slate-600;
     }
 
@@ -154,7 +154,7 @@ main {
     gap: $spacing-200;
 
     &__button {
-        @include text-preset-5;
+        @include fluid-typography($text-preset-5);
         color: $white;
         padding-inline: $spacing-500;
         padding-block: $spacing-200;
@@ -261,13 +261,13 @@ main {
         &__hero-tablet-desktop {
             flex-wrap: nowrap;
             justify-content: space-between;
-            gap: 8vw;
+            gap: 5vw;
             inline-size: 104vw;
             margin-inline: -2vw;
         }
 
         &__container {
-            inline-size: 33%;
+            inline-size: 38%;
             order: 2;
             padding-inline: 0;
             align-self: center;
@@ -275,12 +275,12 @@ main {
 
         &__picture-left {
             margin-block-end: $spacing-700;
-            inline-size: 33%;
+            inline-size: 30%;
         }
 
         &__picture-right {
             margin-block-start: $spacing-700;
-            inline-size: 33%;
+            inline-size: 30%;
             order: 3;
         }
 
@@ -319,6 +319,7 @@ main {
             justify-content: space-between;
             align-items: center;
             padding-block: $spacing-1400;
+            padding-inline: calc(2rem - clamp(0rem, -9.4815rem + 14.8148vw, 2rem));
 
             & > * {
                 text-align: start;
@@ -326,7 +327,7 @@ main {
             }
         }
         .section__title {
-            max-inline-size: 27.8125rem;
+            max-inline-size: 25rem;
         }
 
         .section__description {

@@ -1,3 +1,8 @@
+//Viewports
+$viewport-mobile: 375px;
+$viewport-tablet: 768px;
+$viewport-desktop: 1024px;
+
 // Colors
 $cyan-600: rgb(77, 150, 168);
 $cyan-300: rgb(143, 227, 249);
@@ -24,3 +29,68 @@ $spacing-1400: 112px;
 
 // Typography
 $font-family: 'Red Hat Display', sans-serif;
+$text-preset-1: (
+    font-size: (
+        font-size-1: (fs: 2.5rem, vw: $viewport-mobile),
+        font-size-2: (fs: 3rem, vw: $viewport-tablet),
+        font-size-3: (fs: 4rem, vw: $viewport-desktop),
+    ),
+    styles: (
+        font-family: $font-family,
+        font-weight: 900,
+        line-height: 110%,
+        letter-spacing: 0,
+        text-align: center,
+    )
+);
+$text-preset-2: (
+    font-size: (
+        font-size-1: (fs: 2rem, vw: $viewport-mobile),
+        font-size-2: (fs: 2.25rem, vw: $viewport-tablet),
+        font-size-3: (fs: 2.5rem, vw: $viewport-desktop)
+    ),
+    styles: (
+        font-family: $font-family,
+        font-weight: 900,
+        line-height: 110%,
+        text-align: center,
+    )
+);
+$text-preset-3: (
+    font-size: (
+        font-size-1: (fs: .75rem, vw: $viewport-mobile),
+        font-size-2: (fs: .875rem, vw: $viewport-tablet),
+        font-size-3: (fs: 1rem, vw: $viewport-desktop),
+    ),
+    styles: (
+        font-family: $font-family,
+        font-weight: 900,
+        line-height: 110%,
+        letter-spacing: 0.25rem,
+        text-align: center,
+        text-transform: uppercase,
+    )
+);
+$text-preset-4: (
+    font-size: (
+        font-size-1: (fs: 1rem, vw: $viewport-mobile),
+        font-size-2: (fs: 1.125rem, vw: $viewport-tablet)
+    ),
+    styles: (
+        font-family: $font-family,
+        font-weight: 500,
+        line-height: 150%,
+        text-align: center,
+    )
+);
+$text-preset-5: (
+    font-size: (
+        font-size-1: (fs: 1rem)
+    ),
+    styles: (
+        font-family: $font-family,
+        font-weight: 900,
+        line-height: 150%,
+        text-align: center,
+    )
+);

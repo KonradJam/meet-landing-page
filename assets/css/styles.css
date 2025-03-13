@@ -56,41 +56,30 @@ main {
   margin-block-end: 48px;
 }
 .header__container {
-  padding-inline: clamp(2rem, -3.01rem + 21.374vw, 7.25rem); /* min: 32px, max: 116px */
+  padding-inline: clamp(2rem, -2.7709923664rem + 20.3562340967vi, 7rem);
 }
 .header__title {
-  font-family: "Red Hat Display", sans-serif;
-  font-size: 2.5rem;
+  font-family: Red Hat Display, sans-serif;
+  font-weight: 900;
   line-height: 110%;
   letter-spacing: 0;
-  font-weight: 900;
   text-align: center;
+  font-size: clamp(2.5rem, 2.0229007634rem + 2.0356234097vi, 3rem);
   color: rgb(40, 40, 61);
 }
-@media (min-width: 48rem) {
+@media (min-width: 768px) {
   .header__title {
-    font-size: 3rem;
-  }
-}
-@media (min-width: 64rem) {
-  .header__title {
-    font-size: 4rem;
+    font-size: clamp(3rem, 0rem + 6.25vi, 4rem);
   }
 }
 .header__description {
-  font-family: "Red Hat Display", sans-serif;
-  font-size: 1rem;
-  line-height: 150%;
-  letter-spacing: 0;
+  font-family: Red Hat Display, sans-serif;
   font-weight: 500;
+  line-height: 150%;
   text-align: center;
+  font-size: clamp(1rem, 0.8807251908rem + 0.5089058524vi, 1.125rem);
   color: rgb(135, 135, 157);
   margin-block: 24px;
-}
-@media (min-width: 64rem) {
-  .header__description {
-    font-size: 1.125rem;
-  }
 }
 
 .section__number-component {
@@ -105,12 +94,11 @@ main {
   background-color: rgb(209, 209, 223);
 }
 .section__number {
-  font-family: "Red Hat Display", sans-serif;
-  font-size: 1rem;
-  line-height: 150%;
-  letter-spacing: 0;
+  font-family: Red Hat Display, sans-serif;
   font-weight: 900;
+  line-height: 150%;
   text-align: center;
+  font-size: 1rem;
   color: rgb(135, 135, 157);
   padding: 1rem 1.1875rem;
   border: 1px solid rgb(209, 209, 223);
@@ -118,8 +106,8 @@ main {
   background-color: rgb(250, 250, 250);
 }
 .section__container {
+  padding-inline: clamp(2rem, -2.7709923664rem + 20.3562340967vi, 7rem);
   max-inline-size: 34.0625rem;
-  padding-inline: clamp(2rem, -3.01rem + 21.374vw, 7.25rem); /* min: 32px, max: 116px */
 }
 .section__images {
   max-inline-size: 70rem;
@@ -136,59 +124,42 @@ main {
   border-radius: 8px;
 }
 .section__subtitle {
-  font-family: "Red Hat Display", sans-serif;
-  font-size: 0.75rem;
+  font-family: Red Hat Display, sans-serif;
+  font-weight: 900;
   line-height: 110%;
   letter-spacing: 0.25rem;
-  font-weight: 900;
   text-align: center;
   text-transform: uppercase;
+  font-size: clamp(0.75rem, 0.6307251908rem + 0.5089058524vi, 0.875rem);
   color: rgb(77, 150, 168);
   margin-block-end: 16px;
 }
-@media (min-width: 48rem) {
+@media (min-width: 768px) {
   .section__subtitle {
-    font-size: 0.875rem;
-  }
-}
-@media (min-width: 64rem) {
-  .section__subtitle {
-    font-size: 1rem;
+    font-size: clamp(0.875rem, 0.5rem + 0.78125vi, 1rem);
   }
 }
 .section__title {
-  font-family: "Red Hat Display", sans-serif;
-  font-size: 2rem;
-  line-height: 110%;
-  letter-spacing: 0;
+  font-family: Red Hat Display, sans-serif;
   font-weight: 900;
+  line-height: 110%;
   text-align: center;
+  font-size: clamp(2rem, 1.7614503817rem + 1.0178117048vi, 2.25rem);
   color: rgb(40, 40, 61);
   margin-block-end: 32px;
 }
-@media (min-width: 48rem) {
+@media (min-width: 768px) {
   .section__title {
-    font-size: 2.25rem;
-  }
-}
-@media (min-width: 64rem) {
-  .section__title {
-    font-size: 2.5rem;
+    font-size: clamp(2.25rem, 1.5rem + 1.5625vi, 2.5rem);
   }
 }
 .section__description {
-  font-family: "Red Hat Display", sans-serif;
-  font-size: 1rem;
-  line-height: 150%;
-  letter-spacing: 0;
+  font-family: Red Hat Display, sans-serif;
   font-weight: 500;
+  line-height: 150%;
   text-align: center;
+  font-size: clamp(1rem, 0.8807251908rem + 0.5089058524vi, 1.125rem);
   color: rgb(135, 135, 157);
-}
-@media (min-width: 64rem) {
-  .section__description {
-    font-size: 1.125rem;
-  }
 }
 .section__background-image {
   background-image: url("../images/image-footer-mobile.jpg");
@@ -231,12 +202,11 @@ main {
   gap: 16px;
 }
 .buttons__button {
-  font-family: "Red Hat Display", sans-serif;
-  font-size: 1rem;
-  line-height: 150%;
-  letter-spacing: 0;
+  font-family: Red Hat Display, sans-serif;
   font-weight: 900;
+  line-height: 150%;
   text-align: center;
+  font-size: 1rem;
   color: rgb(250, 250, 250);
   padding-inline: 40px;
   padding-block: 16px;
@@ -318,23 +288,23 @@ main {
   .header__hero-tablet-desktop {
     flex-wrap: nowrap;
     justify-content: space-between;
-    gap: 8vw;
+    gap: 5vw;
     inline-size: 104vw;
     margin-inline: -2vw;
   }
   .header__container {
-    inline-size: 33%;
+    inline-size: 38%;
     order: 2;
     padding-inline: 0;
     align-self: center;
   }
   .header__picture-left {
     margin-block-end: 56px;
-    inline-size: 33%;
+    inline-size: 30%;
   }
   .header__picture-right {
     margin-block-start: 56px;
-    inline-size: 33%;
+    inline-size: 30%;
     order: 3;
   }
   .header__picture-left > * {
@@ -363,15 +333,18 @@ main {
     justify-content: space-between;
     align-items: center;
     padding-block: 112px;
+    padding-inline: calc(2rem - clamp(0rem, -9.4815rem + 14.8148vw, 2rem));
   }
   .section:last-child .section__container > * {
     text-align: start;
     margin-block-end: 0;
   }
   .section:last-child .section__title {
-    max-inline-size: 27.8125rem;
+    max-inline-size: 25rem;
   }
   .section:last-child .section__description {
     max-inline-size: 22.1875rem;
   }
 }
+
+/*# sourceMappingURL=styles.css.map */
